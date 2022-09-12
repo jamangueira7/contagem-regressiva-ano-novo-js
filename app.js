@@ -10,11 +10,13 @@ const nextYear = new Date().getFullYear() + 1;
 const newYearTime = new Date(`January 01 ${nextYear} 00:00:00`);
 nextYearContainer.textContent = nextYear;
 
+const getTimeUnit = unit => unit < 10 ? '0' + unit : unit;
+
 const insertCountdownValues = ({ days, hours, minutes, seconds }) => {
-    secondsContainer.textContent = seconds < 10 ? '0' + seconds : seconds;
-    minutesContainer.textContent = minutes < 10 ? '0' + minutes : minutes;
-    hoursContainer.textContent = hours < 10 ? '0' + hours : hours;
-    daysContainer.textContent = days < 10 ? '0' + days : days;
+    secondsContainer.textContent = getTimeUnit(seconds);
+    minutesContainer.textContent = getTimeUnit(minutes);
+    hoursContainer.textContent = getTimeUnit(hours);
+    daysContainer.textContent = getTimeUnit(days);
 };
 
 const updateCountdown = () => {
