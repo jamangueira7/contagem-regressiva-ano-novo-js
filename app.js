@@ -24,8 +24,10 @@ const updateCountdown = () => {
     daysContainer.textContent = days < 10 ? '0' + days : days;
 };
 
-setTimeout(() => {
+const handleCountdownDisplay = () => {
     spinnerLoading.remove();
     countdownContainer.style.display = 'flex';
-}, 1000);
+};
+
+setTimeout(handleCountdownDisplay, 1000);
 setInterval(updateCountdown, 1000);
