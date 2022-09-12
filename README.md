@@ -5,7 +5,7 @@
  </p>
 <br>
 
-# Contagem para o ano novo
+# Contagem para o ano novo JS
 
 ## 🚀 Tecnologias
 
@@ -19,7 +19,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Projeto faz a contagem do ano corrente ate o proximo ano novo.
 
-Projeto inspirado na video aula do canal [Florin Pop](https://www.youtube.com/watch?v=dtKciwk_si4).
+Video aula do canal [Roger Melo](https://www.youtube.com/watch?v=ms0mXabu5RY).
 
 <p align="center">
   <img alt="animation" src=".github/imagem1.PNG" width="100%">
